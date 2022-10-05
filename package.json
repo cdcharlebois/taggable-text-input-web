@@ -1,0 +1,38 @@
+{
+  "name": "taggabletextinputweb",
+  "widgetName": "TaggableTextInputWeb",
+  "version": "1.0.0",
+  "description": "A taggable text input for the web (@-mentions and #-tags)",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Conner Charlebois",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "/Volumes/[C] Windows 10/MxProjects/KitchenSink",
+    "developmentPort": 3000
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.0.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "classnames": "^2.2.6",
+    "quill": "^1.3.7",
+    "quill-mention": "^3.1.0",
+    "react-dom": "^18.2.0",
+    "react-popper": "^2.3.0",
+    "react-quill": "^2.0.0"
+  }
+}
